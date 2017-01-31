@@ -11,7 +11,7 @@
             <xsl:apply-templates select="node()|@*"/>
                 <log:logger category="org.keycloak">
                     <log:level>
-                      <xsl:attribute name="name">${env.KEYCLOAK_LOGLEVEL:INFO}</xsl:attribute>
+                      <xsl:attribute name="name">${env.KEYCLOAK_LOGLEVEL:DEBUG}</xsl:attribute>
                     </log:level>
                 </log:logger>
         </xsl:copy>
